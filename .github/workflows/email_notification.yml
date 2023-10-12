@@ -1,0 +1,27 @@
+name: Send Build Status Email
+
+on:
+  workflow_run:
+    workflows: ["Email Notification"]
+    types:
+      - completed
+
+jobs:
+  send_notification:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Send notification email
+        uses: softprops/action-email@v3
+        with:
+          from: altauil@gmail.com
+          to: fadal@softserveinc.com
+          server: smtp.gmail.com
+          port: 465
+          secure: true
+          username: altauil@gmail.com
+          password: ${{ secrets.EMAIL_PASSWORD }}
+          subject: "GitHub Actions Build Status"
+          body: "The build status is: ${{ github.event.workflow_run.conclusion }}"
