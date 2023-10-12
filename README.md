@@ -1,4 +1,4 @@
-[![CI/CD Status](https://github.com/fatawil/ci-cd-tutorial-sample-app/workflows/docker_build_push.yml/badge.svg?branch=develop)](https://github.com/fatawil/ci-cd-tutorial-sample-app/actions)
+[![docker_build_push](https://github.com/fatawil/ci-cd-tutorial-sample-app/workflows/docker_build_push.yml/badge.svg?branch=develop)](https://github.com/fatawil/ci-cd-tutorial-sample-app/actions)
 
 # CD/CI Tutorial Sample Application
 
