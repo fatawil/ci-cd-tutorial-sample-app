@@ -22,6 +22,6 @@ jobs:
           port: 465
           secure: true
           username: altauil@gmail.com
-          password: ${{ secrets.APP_PASSWORD }}
+          password: ${{ secrets.EMAIL_PASSWORD }}
           subject: "GitHub Actions Build Status"
           body: "The build status is: ${{ github.event.workflow_run.conclusion }}"
