@@ -19,8 +19,8 @@ jobs:
         with:
           from: altauil@gmail.com
           to: fadal@softserveinc.com
-          server: smtp.gmail.com
-          port: 465
+          server_address: smtp.gmail.com
+          server_port: 465
           secure: true
           username: altauil@gmail.com
           password: ${{ secrets.EMAIL_PASSWORD }}
