@@ -1,7 +1,7 @@
 # Taken from: https://docs.github.com/en/free-pro-team@latest/actions/guides/building-and-testing-python
 # and: https://docs.github.com/en/free-pro-team@latest/actions/guides/publishing-docker-images
 # and adapted. More info on workflow syntax: https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions
-name: Lint the code, run tests, build and push Docker image
+name: Build
 
 on:
   push:

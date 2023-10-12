@@ -2,19 +2,20 @@ name: Send Build Status Email
 
 on:
   workflow_run:
-    workflows: ["Email Notification"]
+    workflows: ["Build"]
     types:
       - completed
 
 jobs:
   send_notification:
     runs-on: ubuntu-latest
+    if: github.event.workflow_run.conclusion != 'skipped'
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
 
       - name: Send notification email
-        uses: softprops/action-email@v3
+        uses: dawidd6/action-send-mail@v3
         with:
           from: altauil@gmail.com
           to: fadal@softserveinc.com
