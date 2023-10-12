@@ -59,7 +59,7 @@ jobs:
   # Build and push the Docker image
   push_to_acr:
     name: Build and push Docker image to Azure Container Registry
-    if: github.event_name == 'release'
+    # if: github.event_name == 'release'
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repo
