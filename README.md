@@ -1,4 +1,4 @@
-[![CI/CD Status](https://github.com/fatawil/ci-cd-tutorial-sample-app/workflows/CI/CD%20Workflow/badge.svg)](https://github.com/fatawil/ci-cd-tutorial-sample-app/actions)
+[![CI/CD Status](https://github.com/fatawil/ci-cd-tutorial-sample-app/workflows/badge.svg)](https://github.com/fatawil/ci-cd-tutorial-sample-app/actions)
 
 # CD/CI Tutorial Sample Application
 
