@@ -2,7 +2,7 @@ name: Send Build Status Email
 
 on:
   workflow_run:
-    workflows: ["Email Notification"]
+    workflows: ["Lint the code, run tests, build and push Docker image"]
     types:
       - completed
 
